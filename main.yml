@@ -11,7 +11,7 @@
           vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
           group: AWX
-          key_name: ansible-tower
+          key_name: awx-key
 
       - name: Provision Ubuntu 16.04 LTS
         ec2:
@@ -26,7 +26,7 @@
                sudo apt-get install python -y
                sudo apt-get install git -y
           group: AWX
-          key_name: ansible-tower
+          key_name: awx-key
       
       - name: Provision Debian GNU-Linux8
         ec2:
@@ -37,7 +37,7 @@
           vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
           group: AWX
-          key_name: ansible-tower
+          key_name: awx-key
 
       - name: Provision Windows 2016
         ec2:
@@ -48,4 +48,4 @@
           vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
           group: AWX
-          key_name: ansible-tower
+          key_name: awx-key
