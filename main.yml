@@ -17,7 +17,7 @@
         ec2:
           aws_region: us-east-1
           instance_type: t2.micro
-          image: ami-092d0d014b7b31a08
+          image: ami-0565af6e282977273
           count: 1
           vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
