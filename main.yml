@@ -4,9 +4,9 @@
     tasks:
       - name: Provision CentOS7
         ec2:
-          aws_region: eu-west-1
+          aws_region: us-east-1
           instance_type: t2.micro
-          image: ami-0ff760d16d9497662
+          image: ami-02eac2c0129f6376b
           count: 1
           vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
@@ -15,9 +15,9 @@
 
       - name: Provision Ubuntu 16.04 LTS
         ec2:
-          aws_region: eu-west-1
+          aws_region: us-east-1
           instance_type: t2.micro
-          image: ami-08660f1c6fb6b01e7
+          image: ami-092d0d014b7b31a08
           count: 1
           vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
@@ -30,9 +30,9 @@
       
       - name: Provision Debian GNU-Linux8
         ec2:
-          aws_region: eu-west-1
+          aws_region: us-east-1
           instance_type: t2.micro
-          image: ami-3291be54
+          image: ami-02eac2c0129f6376b
           count: 1
           vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
@@ -41,9 +41,9 @@
 
       - name: Provision Windows 2016
         ec2:
-          aws_region: eu-west-1
+          aws_region: us-east-1
           instance_type: t2.micro
-          image: ami-05ded958b37e57597
+          image: ami-00a20f508263efd30
           count: 1
           vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
