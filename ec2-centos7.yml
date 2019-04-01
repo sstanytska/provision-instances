@@ -11,4 +11,4 @@
           vpc_subnet_id: subnet-0201417f
           assign_public_ip: yes
           group: default
-          key_name: myshittykey
+          key_name: awx-key
