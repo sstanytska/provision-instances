@@ -34,3 +34,14 @@
           assign_public_ip: yes
           group: default
           key_name: awx-key
+
+      - name: Provision Windows 2016
+        ec2:
+          aws_region: eu-central-1
+          instance_type: t2.micro
+          image: ami-04c3cf8dfea7d36eb
+          count: 1
+          vpc_subnet_id: subnet-0201417f
+          assign_public_ip: yes
+          group: default
+          key_name: awx-key
