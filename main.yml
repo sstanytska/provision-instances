@@ -11,7 +11,7 @@
           vpc_subnet_id: subnet-0201417f
           assign_public_ip: yes
           group: default
-          key_name: awx-key
+          key_name: awx
 
       - name: Provision Ubuntu 16.04 LTS
         ec2:
@@ -22,7 +22,7 @@
           vpc_subnet_id: subnet-0201417f
           assign_public_ip: yes
           group: default
-          key_name: awx-key
+          key_name: awx
       
       - name: Provision Debian GNU-Linux8
         ec2:
@@ -33,7 +33,7 @@
           vpc_subnet_id: subnet-0201417f
           assign_public_ip: yes
           group: default
-          key_name: awx-key
+          key_name: awx
 
       - name: Provision Windows 2016
         ec2:
@@ -44,4 +44,4 @@
           vpc_subnet_id: subnet-0201417f
           assign_public_ip: yes
           group: default
-          key_name: awx-key
+          key_name: awx
