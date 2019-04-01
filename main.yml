@@ -21,6 +21,11 @@
           count: 1
           vpc_subnet_id: subnet-00a05e1cf84a5842d
           assign_public_ip: yes
+          user_data: |
+               #!/bin/sh
+               sudo apt-get install python -y
+               sudo apt-get install git -y
+               sudo apt-get install tree -y
           group: awx-sg
           key_name: awx-key
       
