@@ -8,9 +8,9 @@
           instance_type: t2.micro
           image: ami-0ff760d16d9497662
           count: 1
-          vpc_subnet_id: subnet-53d80b09
+          vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
-          group: awx-sg
+          group: AWX
           key_name: ansible-tower
 
       - name: Provision Ubuntu 16.04 LTS
@@ -19,13 +19,13 @@
           instance_type: t2.micro
           image: ami-08660f1c6fb6b01e7
           count: 1
-          vpc_subnet_id: subnet-53d80b09
+          vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
           user_data: |
                #!/bin/sh
                sudo apt-get install python -y
                sudo apt-get install git -y
-          group: awx-sg
+          group: AWX
           key_name: ansible-tower
       
       - name: Provision Debian GNU-Linux8
@@ -34,9 +34,9 @@
           instance_type: t2.micro
           image: ami-3291be54
           count: 1
-          vpc_subnet_id: subnet-53d80b09
+          vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
-          group: awx-sg
+          group: AWX
           key_name: ansible-tower
 
       - name: Provision Windows 2016
@@ -45,7 +45,7 @@
           instance_type: t2.micro
           image: ami-05ded958b37e57597
           count: 1
-          vpc_subnet_id: subnet-53d80b09
+          vpc_subnet_id: subnet-933aaccf
           assign_public_ip: yes
-          group: awx-sg
+          group: AWX
           key_name: ansible-tower
